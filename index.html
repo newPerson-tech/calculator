@@ -9,7 +9,21 @@
 </head>
 
 <body>
-
+    <h2>Calculator</h2>
+    <input type="number" id="numberInput" placeholder="Enter first number">
+    <br>
+    <select id="operation">
+        <option value="addition">+</option>
+        <option value="subsrtruction">-</option>
+        <option value="multiplication">*</option>
+        <option value="division">/</option>
+    </select>
+    <br>
+    <input type="number" id="numberTwoInput" placeholder="Enter another number">
+    <br>
+    <button onclick="calculate()">Calculate</button>
+    <br>
+    <p id="calculationOutcome"></p>
     <script src="./src/script.js"></script>
 </body>
 
