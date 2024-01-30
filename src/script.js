@@ -22,6 +22,6 @@ function calculate() {
             result = `Operation cannot be completed`;
     }
 
-    document.getElementById('calculationOutcome').innerHTML = "Mathematical operation result: " + result;
+    document.getElementById('calculationOutcome').innerHTML = `Mathematical operation result:  ${result}`;
 
 }
