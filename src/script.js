@@ -1,27 +1,7 @@
-function calculate() {
-    const firstNumber = parseFloat(document.getElementById('numberInput').value);
-    const secondNumber = parseFloat(document.getElementById('numberTwoInput').value);
-
-    const operation = document.getElementById('operation').value;
-    const result = 0;
-
-    switch (operation) {
-        case 'addition':
-            result = firstNumber + secondNumber;
-            break;
-        case 'substruction':
-            result = firstNumber - secondNumber;
-            break;
-        case 'multiplication':
-            result = firstNumber * secondNumber;
-            break;
-        case 'division':
-            result = firstNumber / secondNumber;
-            break;
-        default:
-            result = `Operation cannot be completed`;
-    }
-
-    document.getElementById('calculationOutcome').innerHTML = `Mathematical operation result:  ${result}`;
-
-}
+const numberButtons = document.querySelectorAll('[data-number]');
+const operationButtons = document.querySelectorAll('[data-operation]');
+const equalsButton = document.querySelector('[data-equals]');
+const deleteButton = document.querySelector('[data-delete]');
+const allClearButton = document.querySelector('[data-all-clear]');
+const previousOperandTextEl = document.querySelector('[data-previous-operand]');
+const currentOperandTextEl = document.querySelector('[data-current-operand]');
